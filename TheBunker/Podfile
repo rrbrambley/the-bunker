@@ -1,17 +1,30 @@
 # Uncomment this line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '9.0'
 # Uncomment this line if you're using Swift
-# use_frameworks!
+use_frameworks!
+
+def common_pods
+    pod 'Swinject', '1.1.1'
+end
+
+def test_pods
+    pod 'Quick', '0.9.2'
+    pod 'Nimble', '4.0.1'
+end
 
 target 'TheBunker' do
-
+    pod 'Alamofire', '~> 3.3.0'
+    pod 'SwiftyJSON', '~> 2.3.1'
+    common_pods
 end
 
 target 'TheBunkerTests' do
-
+    common_pods
+    test_pods
 end
 
 target 'TheBunkerUITests' do
-
+    common_pods
+    test_pods 
 end
 

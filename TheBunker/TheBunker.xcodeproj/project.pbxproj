@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0953B47EA3055C8D1A6D0DE7 /* libPods-TheBunker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D60D30886E8C1D9D794618F /* libPods-TheBunker.a */; };
-		77250BE3533A32BFCA00E70C /* libPods-TheBunkerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD505BE9459FA37864482335 /* libPods-TheBunkerUITests.a */; };
-		B005BE57BE776F1C266DEC87 /* libPods-TheBunkerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8B406355843976126B5465 /* libPods-TheBunkerTests.a */; };
+		693F66F597DAB6954B139020 /* Pods_TheBunker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF316932467D1C451A899F5 /* Pods_TheBunker.framework */; };
+		A2747E259BCEAED2CC193647 /* Pods_TheBunkerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D9214CF157144AA7502FC6 /* Pods_TheBunkerTests.framework */; };
+		D04C678B04232D0364A16451 /* Pods_TheBunkerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE3DF4F0664DFE323AC2AB6 /* Pods_TheBunkerUITests.framework */; };
 		E277B44F1CD11AFE00B68EB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277B44E1CD11AFE00B68EB1 /* AppDelegate.swift */; };
 		E277B4511CD11AFE00B68EB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277B4501CD11AFE00B68EB1 /* ViewController.swift */; };
 		E277B4541CD11AFE00B68EB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E277B4521CD11AFE00B68EB1 /* Main.storyboard */; };
@@ -17,6 +17,16 @@
 		E277B4591CD11AFE00B68EB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E277B4571CD11AFE00B68EB1 /* LaunchScreen.storyboard */; };
 		E277B4641CD11AFE00B68EB1 /* TheBunkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277B4631CD11AFE00B68EB1 /* TheBunkerTests.swift */; };
 		E277B46F1CD11AFE00B68EB1 /* TheBunkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277B46E1CD11AFE00B68EB1 /* TheBunkerUITests.swift */; };
+		E277B4A31CD187E900B68EB1 /* TheBunkerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277B4A21CD187E900B68EB1 /* TheBunkerClient.swift */; };
+		E277B4A51CD1891F00B68EB1 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277B4A41CD1891F00B68EB1 /* Networking.swift */; };
+		E277B4A71CD18DA000B68EB1 /* Messageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277B4A61CD18DA000B68EB1 /* Messageable.swift */; };
+		E277B4A91CD18E7200B68EB1 /* ButtonCommandInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277B4A81CD18E7200B68EB1 /* ButtonCommandInstruction.swift */; };
+		E277B4AB1CD18E7D00B68EB1 /* SlideCommandInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277B4AA1CD18E7D00B68EB1 /* SlideCommandInstruction.swift */; };
+		E277B4AD1CD18EDB00B68EB1 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277B4AC1CD18EDB00B68EB1 /* Console.swift */; };
+		E277B4AF1CD1919800B68EB1 /* OtherInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277B4AE1CD1919800B68EB1 /* OtherInstruction.swift */; };
+		E277B4B11CD1936500B68EB1 /* Authenticable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277B4B01CD1936500B68EB1 /* Authenticable.swift */; };
+		E277B4B31CD1942100B68EB1 /* ConsoleAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277B4B21CD1942100B68EB1 /* ConsoleAccessToken.swift */; };
+		E277B4B91CD2679A00B68EB1 /* messages_response.json in Resources */ = {isa = PBXBuildFile; fileRef = E277B4B81CD2679A00B68EB1 /* messages_response.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +49,12 @@
 /* Begin PBXFileReference section */
 		04079A48F7E8FAD008B5295A /* Pods-TheBunkerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBunkerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheBunkerTests/Pods-TheBunkerTests.release.xcconfig"; sourceTree = "<group>"; };
 		27A25B266016AC866D915652 /* Pods-TheBunker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBunker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheBunker/Pods-TheBunker.debug.xcconfig"; sourceTree = "<group>"; };
-		4D60D30886E8C1D9D794618F /* libPods-TheBunker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheBunker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B7E00B30379865F288D9D4 /* Pods-TheBunkerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBunkerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheBunkerUITests/Pods-TheBunkerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5E0F941895CE12B74BE2FB90 /* Pods-TheBunkerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBunkerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheBunkerTests/Pods-TheBunkerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ADF316932467D1C451A899F5 /* Pods_TheBunker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheBunker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56412A1472864FEA00F20EA /* Pods-TheBunker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBunker.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheBunker/Pods-TheBunker.release.xcconfig"; sourceTree = "<group>"; };
-		DD505BE9459FA37864482335 /* libPods-TheBunkerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheBunkerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D9214CF157144AA7502FC6 /* Pods_TheBunkerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheBunkerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBE3DF4F0664DFE323AC2AB6 /* Pods_TheBunkerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheBunkerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E277B44B1CD11AFE00B68EB1 /* TheBunker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBunker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E277B44E1CD11AFE00B68EB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E277B4501CD11AFE00B68EB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +68,16 @@
 		E277B46A1CD11AFE00B68EB1 /* TheBunkerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheBunkerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E277B46E1CD11AFE00B68EB1 /* TheBunkerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBunkerUITests.swift; sourceTree = "<group>"; };
 		E277B4701CD11AFE00B68EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB8B406355843976126B5465 /* libPods-TheBunkerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheBunkerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E277B4A21CD187E900B68EB1 /* TheBunkerClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheBunkerClient.swift; sourceTree = "<group>"; };
+		E277B4A41CD1891F00B68EB1 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		E277B4A61CD18DA000B68EB1 /* Messageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messageable.swift; sourceTree = "<group>"; };
+		E277B4A81CD18E7200B68EB1 /* ButtonCommandInstruction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCommandInstruction.swift; sourceTree = "<group>"; };
+		E277B4AA1CD18E7D00B68EB1 /* SlideCommandInstruction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideCommandInstruction.swift; sourceTree = "<group>"; };
+		E277B4AC1CD18EDB00B68EB1 /* Console.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
+		E277B4AE1CD1919800B68EB1 /* OtherInstruction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherInstruction.swift; sourceTree = "<group>"; };
+		E277B4B01CD1936500B68EB1 /* Authenticable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticable.swift; sourceTree = "<group>"; };
+		E277B4B21CD1942100B68EB1 /* ConsoleAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleAccessToken.swift; sourceTree = "<group>"; };
+		E277B4B81CD2679A00B68EB1 /* messages_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = messages_response.json; sourceTree = "<group>"; };
 		FDDBC4E1CAB7C003C92CE1C2 /* Pods-TheBunkerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBunkerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheBunkerUITests/Pods-TheBunkerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0953B47EA3055C8D1A6D0DE7 /* libPods-TheBunker.a in Frameworks */,
+				693F66F597DAB6954B139020 /* Pods_TheBunker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B005BE57BE776F1C266DEC87 /* libPods-TheBunkerTests.a in Frameworks */,
+				A2747E259BCEAED2CC193647 /* Pods_TheBunkerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77250BE3533A32BFCA00E70C /* libPods-TheBunkerUITests.a in Frameworks */,
+				D04C678B04232D0364A16451 /* Pods_TheBunkerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,9 +112,9 @@
 		28E72962A05F96C33F148057 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4D60D30886E8C1D9D794618F /* libPods-TheBunker.a */,
-				FB8B406355843976126B5465 /* libPods-TheBunkerTests.a */,
-				DD505BE9459FA37864482335 /* libPods-TheBunkerUITests.a */,
+				ADF316932467D1C451A899F5 /* Pods_TheBunker.framework */,
+				B9D9214CF157144AA7502FC6 /* Pods_TheBunkerTests.framework */,
+				BBE3DF4F0664DFE323AC2AB6 /* Pods_TheBunkerUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,6 +157,8 @@
 		E277B44D1CD11AFE00B68EB1 /* TheBunker */ = {
 			isa = PBXGroup;
 			children = (
+				E277B4A11CD1875B00B68EB1 /* Client */,
+				E277B4891CD1354D00B68EB1 /* Model */,
 				E277B44E1CD11AFE00B68EB1 /* AppDelegate.swift */,
 				E277B4501CD11AFE00B68EB1 /* ViewController.swift */,
 				E277B4521CD11AFE00B68EB1 /* Main.storyboard */,
@@ -152,6 +174,7 @@
 			children = (
 				E277B4631CD11AFE00B68EB1 /* TheBunkerTests.swift */,
 				E277B4651CD11AFE00B68EB1 /* Info.plist */,
+				E277B4B81CD2679A00B68EB1 /* messages_response.json */,
 			);
 			path = TheBunkerTests;
 			sourceTree = "<group>";
@@ -163,6 +186,29 @@
 				E277B4701CD11AFE00B68EB1 /* Info.plist */,
 			);
 			path = TheBunkerUITests;
+			sourceTree = "<group>";
+		};
+		E277B4891CD1354D00B68EB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E277B4B01CD1936500B68EB1 /* Authenticable.swift */,
+				E277B4A81CD18E7200B68EB1 /* ButtonCommandInstruction.swift */,
+				E277B4AC1CD18EDB00B68EB1 /* Console.swift */,
+				E277B4B21CD1942100B68EB1 /* ConsoleAccessToken.swift */,
+				E277B4A61CD18DA000B68EB1 /* Messageable.swift */,
+				E277B4A41CD1891F00B68EB1 /* Networking.swift */,
+				E277B4AE1CD1919800B68EB1 /* OtherInstruction.swift */,
+				E277B4AA1CD18E7D00B68EB1 /* SlideCommandInstruction.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E277B4A11CD1875B00B68EB1 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				E277B4A21CD187E900B68EB1 /* TheBunkerClient.swift */,
+			);
+			name = Client;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E277B4B91CD2679A00B68EB1 /* messages_response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,8 +477,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E277B4AF1CD1919800B68EB1 /* OtherInstruction.swift in Sources */,
+				E277B4A71CD18DA000B68EB1 /* Messageable.swift in Sources */,
 				E277B4511CD11AFE00B68EB1 /* ViewController.swift in Sources */,
+				E277B4A91CD18E7200B68EB1 /* ButtonCommandInstruction.swift in Sources */,
+				E277B4AD1CD18EDB00B68EB1 /* Console.swift in Sources */,
+				E277B4B11CD1936500B68EB1 /* Authenticable.swift in Sources */,
+				E277B4A31CD187E900B68EB1 /* TheBunkerClient.swift in Sources */,
+				E277B4A51CD1891F00B68EB1 /* Networking.swift in Sources */,
+				E277B4B31CD1942100B68EB1 /* ConsoleAccessToken.swift in Sources */,
 				E277B44F1CD11AFE00B68EB1 /* AppDelegate.swift in Sources */,
+				E277B4AB1CD18E7D00B68EB1 /* SlideCommandInstruction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

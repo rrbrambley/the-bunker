@@ -1,0 +1,20 @@
+{
+    "messages":[
+                {
+                "type":"button",
+                "instruction":"tap the button two times"
+                },
+                {
+                "type":"button",
+                "instruction":"tap the button three times"
+                },
+                {
+                "type":"slide",
+                "instruction":"move the slider to the left position"
+                },
+                {
+                "type":"slide",
+                "instruction":"move the slider to the right position"
+                }
+                ]
+}

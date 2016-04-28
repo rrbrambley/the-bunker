@@ -6,6 +6,7 @@
 //  Copyright © 2016 AATT. All rights reserved.
 //
 
+import Alamofire
 import UIKit
 
 class ViewController: UIViewController {

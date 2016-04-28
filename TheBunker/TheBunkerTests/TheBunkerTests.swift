@@ -6,31 +6,80 @@
 //  Copyright © 2016 AATT. All rights reserved.
 //
 
-import XCTest
+import Nimble
+import Quick
+import Swinject
 @testable import TheBunker
 
-class TheBunkerTests: XCTestCase {
+class TheBunkerTests: QuickSpec {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+    struct StubNetworking: Networking {
+        func signIn(email: String, password: String, response: (RetrievalResponse<Authenticable, NSError> -> Void)!) {
+            //TODO
+        }
+        
+        func retrieveMessages(response: (RetrievalResponse<Array<Messageable>, NSError> -> Void)!) {
+            //TODO
+        }
+        
+        func readJsonFile(fileName: String) -> String? {
+            let bundle = NSBundle(forClass: TheBunkerTests.self)
+            let path = bundle.pathForResource(fileName, ofType: "json")
+            var rawJson: String?
+            do {
+                rawJson = try NSString(contentsOfURL: NSURL(fileURLWithPath: path!), encoding: NSUTF8StringEncoding) as String
+            } catch {
+                print(error)
+            }
+            return rawJson
         }
     }
     
+    override func spec() {
+        var container: Container!
+        
+        beforeEach {
+            container = Container()
+            
+            container.register(Networking.self, name: "stub") { _ in StubNetworking() }
+        }
+        
+        it("authenticates successfully") {
+            let client = container.resolve(Networking.self, name: "stub")!
+            
+            client.signIn("testlogin@gmail.com", password: "testPassword") { (response: RetrievalResponse<Authenticable, NSError>) in
+                switch(response) {
+                    
+                case .Success(let token):
+                    print(token)
+                    //TODO
+                    
+                case .Failure(let error):
+                    print(error.localizedDescription)
+                    //TODO
+                    
+                }
+            }
+        }
+        
+        it("receives messages") {
+            let client = container.resolve(Networking.self, name: "stub")!
+            
+            client.retrieveMessages { (response: RetrievalResponse<Array<Messageable>, NSError>) in
+                switch(response) {
+                    
+                case .Success(let messages):
+                    for message in messages {
+                        print(message)
+                    }
+                    //TODO
+                    
+                case .Failure(let error):
+                    print(error.localizedDescription)
+                    //TODO
+                    
+                }
+            }
+        }
+    }
 }
